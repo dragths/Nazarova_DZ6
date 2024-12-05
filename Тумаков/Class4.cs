@@ -21,14 +21,12 @@ namespace Тумаков
             this.buildingNumber = GenerateBuildingNumber();
         }
 
-        
         private static int GenerateBuildingNumber()
         {
             lastBuildingNumber++;
             return lastBuildingNumber; 
         }
 
-        
         public void SetHeight(double height)
         {
             this.height = height;
@@ -40,19 +38,16 @@ namespace Тумаков
             this.floors = floors;
         }
 
-        
         public void SetApartments(int apartments)
         {
             this.apartments = apartments;
         }
 
-        
         public void SetEntrances(int entrances)
         {
             this.entrances = entrances;
         }
 
-        
         public double GetFloorHeight()
         {
             if (floors == 0) return 0;
@@ -65,13 +60,11 @@ namespace Тумаков
             return apartments / entrances; 
         }
 
-        
         public int GetApartmentsPerFloor()
         {
             if (floors == 0) return 0; 
             return apartments / floors; 
         }
-
         
         public void PrintBuildingDetails()
         {
